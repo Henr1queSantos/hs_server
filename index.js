@@ -6,7 +6,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: "http://localhost:3000", // Allow your React app to connect
+    origin: ["http://localhost:3000", "https://Henr1queSantos.github.io/hs_collaborative-whiteboard"], // Allow both
     methods: ["GET", "POST"]
   }
 });
