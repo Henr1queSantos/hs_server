@@ -6,7 +6,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: ["http://localhost:3000", "https://Henr1queSantos.github.io"], // Allow both
+    origin: ["http://localhost:3000", "https://henr1quesantos.github.io"], // Allow both
     methods: ["GET", "POST"]
   }
 });
